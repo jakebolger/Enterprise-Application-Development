@@ -1,0 +1,191 @@
+<!-- Jake Bolger C18395341 
+  index.html file for main page with buttons
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <title>Lab 4 , Express.js</title>
+  </head>
+  <body id="body">
+    <!-- navbar header -->
+      <nav id="header_nav" class="header_nav navbar-expand-lg navbar-dark bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 bg-dark" >-----COMPULSORY LABORATORY SHEET 4 - Express.js, JAKE BOLGER - C18395341-----</span>
+          <div class="collapse navbar-collapse" id="header_barNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  
+                </li>
+                <li class="nav-item">
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    
+    <div class="container">
+      <div class="row">
+        <!-- 3 Buttons for different functions -->
+        <div class="col">
+          <div
+            
+          >
+          <br>
+          <p1  style="font-size:50px;">BUTTONS:</p1>
+          <br>
+          <br>
+            <button id="retrieveAll" onclick="retrieveAll()" type="button" class="btn btn-primary"
+            >
+              Show colours
+            </button>
+            <button id="getSingle" onclick="getSingle()" type="button" class="btn btn-primary"
+            >
+              Show one colour
+            </button>
+            <button id="insertSingle" onclick="insertSingle()" type="button" class="btn btn-primary"
+            >
+              Insert colour
+            </button>
+          </div>
+        </div>
+        <!-- Content Area -->
+        <div class="col-sm-10">
+          <!-- View All Table -->
+          <p id="retrieveAllTable"></p>
+          <!-- View One Colour -->
+          <div id="boxM">
+            <div class="card text-black bg-light mb-3" style="max-width: 100%">
+              <div class="card-header">
+                <div class="row float-end align-items-center">
+                  <div class="col-auto">
+                    <label for="colourid" class="col-form-label" style="font-size:50px;">Search by Number / ID:</label
+                    >
+                  </div>
+                  <div>
+                  <div class="col-auto">
+                    <input type="number" id="colourid" class="form-control" />
+                  </div>
+                </div>
+                  <div class="col-auto">
+                    <button onclick="getSingle()" type="button" class="btn btn-success" id="submit_button">Find Colour
+                    </button><br>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h3 id="properties" class="card-title" style="background-color:rgba(0, 136, 75, 0.738);">Colour Properties</h3>
+                    <!-- header6 ID -->
+                    <h6 id="header6" style="color:red;">ID:</h6>
+                    
+                    <p id="colour-id"></p>
+                    <!-- hex-->
+                    <h6 id="header6">Hex Value:</h6>
+                    
+                    <p id="colour-hex"></p>
+                    <!-- RGB-->
+                    <h6 id="header6">RGB Value:</h6>
+                    
+                    <p id="colour-rgb"></p>
+                    <!-- HSL-->
+                    <h6 id="header6">HSL Value:</h6>
+                    
+                    <p id="colour-hsl"></p>
+                    <!-- Name-->
+                    <h6 id="header6">Colour Name:</h6>
+                    
+                    <p id="colour-name"></p>
+                  </div>
+                  <div>
+                  <div class="col-sm-4">
+                    <h6 id="header6">Colour:</h6>
+                    <div id="colour-display"></div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Insert One Colour -->
+          <div id="insertM">
+            <div class="card text-black bg-light mb-3" style="max-width: 100%">
+              <div class="card-header">
+                <h3 style="font-size:50px;">Insert Colour</h3>
+                <h6 id="header6">
+                  Choose a Custom colour, and create a name
+                </h6>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h6 id="header6">Pick a custom colour by clicking below..</h6>
+                    <input
+                      type="color"
+                      class="form-control form-control-color"
+                      id="colorInput"
+                      value="#563d7c"
+                      title="Choose your color"
+                      onchange="getinputVs()"
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <h5 class="card-title" id="properties" style="background-color:rgba(0, 136, 75, 0.738);">Colour Properties</h5>
+                    
+                    <h6 id="header6">Hex Value:</h6>
+                    <p id="insert-colour-hex">#0</p>
+                    
+                    <h6 id="header6">RGB Value:</h6>
+                    <p id="insert-colour-rgb">rgb(0, 0, 0)</p>
+                    
+                    <h6 id="header6">HSL Value:</h6>
+                    <p id="insert-colour-hsl">hsl(0,0%,0%)</p>
+                    
+                    <h6 id="inputName" style="background-color:rgba(0, 136, 75, 0.738);">Name:</h6>
+                    <input
+                      id="name-input"
+                      type="text"
+                      class="form-control"
+                      aria-label="Name:"
+                      aria-describedby="inputName"
+                      value="Input Colour.."
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button id="submit_button" onclick="insertSingle()" type="button"class="btn btn-success">
+                  Insert Colour
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

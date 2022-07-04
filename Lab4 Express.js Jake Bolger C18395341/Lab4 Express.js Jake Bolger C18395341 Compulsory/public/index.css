@@ -1,0 +1,226 @@
+/*Jake Bolger C18395341 */
+/* Setting the background 
+colour to #0d7979 */
+#properties{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 28px;
+}
+
+/*return properties*/
+#return{
+  border: 5px solid rgb(244, 244, 244);
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 28px;
+  margin-left: 25%;
+  margin-right: 30%;
+}
+
+
+/*name-input properties*/
+#name-input{
+  border-radius: 25px;
+  border: 5px solid #020202;
+  color: #76979de3;
+}
+
+
+/*colourid properties*/
+#colourid{
+  border-radius: 25px;
+  border: 5px solid #020202;
+
+}
+
+/*body porperties*/
+body {
+  background-color: #9f4747;
+}
+
+/*display properties*/
+#colour-display {
+  height: 50vh;
+  width: 45vw;
+}
+
+/*colour inout properties*/
+#colorInput{
+  height: 50vh;
+  width: 16vw;
+}
+
+/*nameinput properties*/
+#name-input {
+  width: 80%;
+}
+
+/*navBar styles and positions*/
+.header_nav{
+  background-color: #ffffff;
+  color: rgb(210, 161, 224);
+  border-radius: 25px;
+  border: 2px solid #020202;
+  height: 100px;
+  margin-left: 25%;
+  margin-right: 30%;
+}
+
+/*get all colours*/
+#retrieveAll{
+  
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #b94545;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: sticky;
+  left: 200px;
+  border: 2px solid #000000;
+  float: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 2%;
+}
+
+/*show one colour*/
+#getSingle{
+  
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #b94545;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: sticky;
+  left: 200px;
+  border: 2px solid #000000;
+  float: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 2%;
+}
+/*single colour properties*/
+#insertSingle{
+  
+  border-radius: 4px;
+  background-color: #070000;
+  border: none;
+  color: #b94545;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: sticky;
+  left: 50px;
+  float: left;
+  border: 2px solid #000000;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 2%;
+}
+
+/*submit colour  properties*/
+#submit_button{
+  border-radius: 4px;
+  background-color: #45b990;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: sticky;
+  left: 200px;
+  border: 2px solid #000000;
+  float: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 2%;
+}
+
+
+/*header 6 properties*/
+#header6{
+  color: #ff0505;
+  text-align: center;
+  background-color: #9cd7c2;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+
+/*colour-id properties*/
+#colour-id{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#colour-hex{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+#colour-rgb{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+#colour-hsl{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+#colour-name{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+#insert-colour-hex{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+#insert-colour-rgb{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+#insert-colour-hsl{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+#inputName{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#tableMaster{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
