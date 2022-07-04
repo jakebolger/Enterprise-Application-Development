@@ -1,0 +1,2 @@
+# Enterprise-Application-Development
+Created a series of web-based projects demonstrating knowledge and use of technologies which include  Bootstrap, Node.js, AJAX and JSON, REST API, Express.js, MongoDB, Redis, JQuery, Bcrypt, and Regex. These technologies were used to design feature rich web pages, create servers, access JSON data, create APIs to respond to queries, creating websites to interact with the servers using these APIs,  implementing cookies, implementing authentication with Redis, using MongoDB to store data, and  implementing passwords and Regular Expressions
